@@ -30,7 +30,7 @@ public class SistemasNumericos {
         System.out.println("numeroHex = " + numeroHex);*/
 
 
-        //Interfaz
+        //Interfaz con JOption Pane
         String mensajeBinario = "Numero binario de: " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
         String mensajeOctal = "\nNumero octal de: " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
         String mensajeHex = "\nNumero hexadecimal de: " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);

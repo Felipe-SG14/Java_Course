@@ -11,6 +11,7 @@ Máster completo en Java
     - Boolean 
 3. Sistemas numéricos
 4. Entrada y salida de datos con JOptionPane
+5. Entrada y salida de datos con Scanner
 
 ## Herramientas
 

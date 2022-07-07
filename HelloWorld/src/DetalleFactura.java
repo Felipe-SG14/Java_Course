@@ -22,20 +22,20 @@ public class DetalleFactura {
         Scanner scanner = new Scanner(System.in);
         
         //Se pide el nombre de la factura:
-        System.out.println("El nombre de la factura es: ");
+        System.out.print("El nombre de la factura es: ");
         String nombreFactura = scanner.nextLine();
 
         double sumaPrecios = 0;
         //Recibiendo precios de productos
         for (int i = 0; i<2 ; i++)
         {
-            System.out.println("El precio del producto "+ Integer.toString(i) + " es: ");
+            System.out.print("El precio del producto "+ i + " es: ");
             sumaPrecios += scanner.nextDouble();
         }
         double impuestoTotal = sumaPrecios * 0.19;
 
         //Salida
-        System.out.println("La factura "+ nombreFactura +" tiene un total bruto de "+ Double.toString(sumaPrecios) + ", con un impuesto de " + Double.toString(impuestoTotal) +" y el monto después de impuesto es de " + Double.toString(sumaPrecios+impuestoTotal));
+        System.out.println("La factura "+ nombreFactura +" tiene un total bruto de "+ sumaPrecios + ", con un impuesto de " + impuestoTotal +" y el monto después de impuesto es de " + sumaPrecios+impuestoTotal);
         
     }
 }

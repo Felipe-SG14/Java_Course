@@ -13,6 +13,7 @@ public class EjemploArreglosOrdenamientoBurbuja {
         // Arrays.sort(productos);
 
         // Metodo burbuja
+        /*
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
                 if (numbers[i] < numbers[j]){
@@ -22,6 +23,19 @@ public class EjemploArreglosOrdenamientoBurbuja {
                 }
             }
         }
+         */
+
+        // Algoritmo burbuja optimizado
+        for (int i = 0; i < numbers.length - 1; i++) {
+            for (int j = 0; j < numbers.length -1 -i ; j++) {
+                if (numbers[j+1] < numbers[j]){
+                    int auxiliar = numbers[j];
+                    numbers[j] = numbers[j+1];
+                    numbers[j+1] = auxiliar;
+                }
+            }
+        }
+
         System.out.println("Arreglo ordenado: " + Arrays.toString(numbers));
 
         // Invertir un arreglo de forma manual

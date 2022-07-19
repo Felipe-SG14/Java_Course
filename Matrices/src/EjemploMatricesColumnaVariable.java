@@ -18,14 +18,14 @@ public class EjemploMatricesColumnaVariable {
         // Llenando con datos
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                matriz[i][j] = j;
+                matriz[i][j] = j+1;
             }
         }
 
         // Mostrando matriz
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + '\t');
+                System.out.print(Integer.toString(matriz[i][j]) + '\t');
             }
             System.out.println();
         }

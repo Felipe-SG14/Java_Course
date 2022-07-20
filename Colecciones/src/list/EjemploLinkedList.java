@@ -1,4 +1,4 @@
-package org.aguzman.ejemplos.set;
+package list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
